@@ -1,121 +1,102 @@
 # M-DataPlus
 
-**Professional Database IDE** — SQL Server & PostgreSQL management tool with IntelliSense, formatting, and execution plans.
+**Professional Database IDE** for SQL Server & PostgreSQL — fast, smart, and intuitive.
 
-![M-DataPlus](build/icon.png)
+<p align="center">
+  <img src="https://github.com/anhnvt4620/M-DataPlus/raw/master/build/icon.png" width="128" alt="M-DataPlus" />
+</p>
 
-## Tính năng nổi bật
+---
 
-### SQL Editor với IntelliSense thông minh
-- Auto-complete **từ khóa SQL**, **bảng**, **view**, **procedure**, **function**, **column**
-- **Frequency-based ranking** — học thói quen sử dụng, gợi ý thông minh hơn theo thời gian
-- **Foreign key JOIN suggestions** — tự động gợi ý `ON` condition khi JOIN
-- **Dot-completion** — gõ `dbo.` → hiện danh sách bảng trong schema
-- **Smart ALTER** — gõ `ALTER VIEW dbo.X` → tự động load định nghĩa
-- **Snippets** tùy chỉnh với placeholder `${1:Table}`
+## Download
+
+[**M-DataPlus Setup 1.0.0.exe** (Windows)](https://github.com/anhnvt4620/M-DataPlus/releases/download/v1.0.0/M-DataPlus.Setup.1.0.0.exe)
+
+Yêu cầu: Windows 10/11, .NET không cần cài thêm.
+
+---
+
+## Tính năng
+
+### SQL Editor
+- **IntelliSense** tự động gợi ý: keyword, bảng, view, procedure, column
+- **Frequency ranking** — càng dùng nhiều, gợi ý càng chính xác
+- **FK JOIN suggestion** — tự động gợi ý điều kiện `ON` khi JOIN
+- **Dot-completion** — gõ `dbo.` hiện danh sách object trong schema
+- **Smart ALTER** — gõ `ALTER VIEW name` → tự load định nghĩa
+- **Snippets** với placeholder `${1:Table}`
 
 ### Object Explorer
-- **Cây thư mục** hiển thị Tables, Views, Synonyms, Procedures, Functions
-- **Pin database** — ghim database hay dùng lên đầu
-- **Filter** theo tên object với auto-expand
-- **Context menu** — Script as CREATE/SELECT/INSERT/UPDATE/DELETE
-- **F12 Go to Definition** — nhảy đến bảng/view trong Explorer
-- **Shift+F12 Find References** — tìm tất cả tab chứa identifier
+- Cây thư mục: Tables, Views, Synonyms, Procedures, Functions
+- **Pin database** thường dùng lên đầu
+- **Filter** theo tên object, tự expand đến kết quả
+- **F12** → trỏ đến bảng/view trong Explorer
+- **Shift+F12** → tìm tất cả reference
+- Chuột phải → Script (CREATE / SELECT / INSERT / UPDATE / DELETE)
 
 ### Data Grid
-- **Inline editing** với INSERT/UPDATE/DELETE + commit/discard
-- **CSV/JSON Export**
-- **Copy as SQL INSERT** từ context menu
-- **Row Inspector** — xem chi tiết từng dòng dạng form
-- **Pagination** client-side
-- **Column picker** — ẩn/hiện cột tùy chọn
+- **Edit trực tiếp** (INSERT / UPDATE / DELETE) + Commit / Discard
+- **Form Inspector** xem chi tiết từng dòng
+- **Column picker** — ẩn/hiện cột
+- **Export** CSV / JSON
+- **Copy as SQL INSERT**
+- **Phân trang** client-side
 
-### Query Editor
-- **Monaco Editor** (VS Code engine) với syntax highlighting
-- **Format SQL** (`Ctrl+Shift+F`) với 11 tùy chọn format (RedGate SQL Prompt style)
-- **Execution Plan** trực quan với cây operator, cost bars, màu code
-- **Multi-result-set** — hiển thị nhiều kết quả trong 1 lần chạy
-- **Messages tab** — log query execution
+### Formatting
+- `Ctrl+Shift+F` format SQL với 11 tùy chọn (theo style RedGate SQL Prompt)
+- `Ctrl+K, Ctrl+F` format vùng chọn
+- Cấu hình: keyword case, identifier case, indent style, expression width...
 
-### Safety
-- **DELETE/UPDATE warning** khi thiếu WHERE clause
-- **Tab coloring per connection** — phân biệt DEV/TEST/PROD
-- **Error Boundary** — crash không làm trắng màn hình
+### Execution Plan
+- **Cây trực quan** với icon + màu code cho từng operator
+- Cost bar hiển thị độ nặng của mỗi operator
+- Expand/collapse từng nhánh
+- Legend chú thích
 
 ### Multi-Connection
-- Kết nối **nhiều server cùng lúc**
-- Chuyển đổi connection qua Sidebar
+- Kết nối nhiều server cùng lúc
+- Chuyển đổi nhanh qua Sidebar
 - **Test Connection** — test không connect thật
+- **Tab coloring** — mỗi connection 1 màu (DEV xanh, PROD đỏ...)
 
-## Themes
+### Safety
+- Cảnh báo khi DELETE/UPDATE thiếu WHERE
+- Tab màu theo môi trường — tránh nhầm DEV/PROD
+- Error Boundary — crash không trắng màn hình
 
-| Light | Dark+ | Monokai | Solarized | High Contrast | Midnight | Ocean |
-|---|---|---|---|---|---|---|
-| `light` | `dark` | `monokai` | `solarized` | `highContrast` | `midnight` | `ocean` |
+### Themes
+7 themes: Light, Dark+, Monokai, Solarized, High Contrast, Midnight, Ocean
+
+---
 
 ## Phím tắt
 
 | Phím | Chức năng |
 |---|---|
-| `F5` | Execute Query |
-| `Ctrl+Enter` | Execute Query (Alt) |
-| `Ctrl+Shift+F` | Format Document |
-| `Ctrl+K, Ctrl+F` | Format Selection |
+| `F5` | Execute query |
+| `Ctrl+Enter` | Execute (Alt) |
+| `Ctrl+Shift+F` | Format document |
+| `Ctrl+K, Ctrl+F` | Format selection |
 | `Ctrl+K, Ctrl+C` | Comment |
 | `Ctrl+K, Ctrl+U` | Uncomment |
-| `Ctrl+Shift+U` | Transform Uppercase |
-| `Ctrl+Shift+L` | Transform Lowercase |
+| `Ctrl+Shift+U` | Uppercase |
+| `Ctrl+Shift+L` | Lowercase |
 | `F12` | Go to Definition |
-| `Shift+F12` | Find All References |
+| `Shift+F12` | Find References |
 | `Ctrl+N` | New Query |
 | `Ctrl+P` | Command Palette |
 | `Ctrl+B` | Toggle Sidebar |
-| `Ctrl+R` | Toggle Results Pane |
-| `Ctrl+Shift+H` | Query History |
-| `Ctrl+L` | Show Execution Plan |
+| `Ctrl+R` | Toggle Results |
+| `Ctrl+L` | Execution Plan |
 
-## Công nghệ
+---
 
-- **Frontend**: React 19 + TypeScript + Vite + Tailwind CSS
-- **Editor**: Monaco Editor (`@monaco-editor/react`)
-- **Desktop**: Electron 41
-- **Database**: `mssql` (tedious) + `pg` (PostgreSQL)
-- **Format**: `sql-formatter`
-- **Icons**: Lucide React
+## Hỗ trợ
 
-## Cài đặt
+- **SQL Server** (Windows Auth / SQL Auth)
+- **PostgreSQL** (SSL support)
 
-### Windows
-
-Tải installer từ [Releases](https://github.com/anhnvt4620/M-DataPlus/releases):
-
-```
-M-DataPlus Setup 1.0.0.exe
-```
-
-### Development
-
-```bash
-# Clone
-git clone https://github.com/anhnvt4620/M-DataPlus.git
-cd M-DataPlus
-
-# Install
-npm install
-
-# Dev mode
-npm run dev
-
-# Build Windows installer
-npm run build:exe
-```
-
-## Build
-
-```bash
-npm run build:exe
-# Output: release/M-DataPlus Setup 1.0.0.exe
-```
+---
 
 ## License
 
