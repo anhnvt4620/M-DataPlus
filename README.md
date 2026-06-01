@@ -23,7 +23,7 @@
 | **v1.1.0 (Latest)** | [**M-DataPlus Setup 1.1.0.exe**](https://github.com/anhnvt4620/M-DataPlus/releases/download/v1.1.0/M-DataPlus.Setup.1.1.0.exe) | Windows 10/11 (Không cần cài thêm .NET) |
 
 ---
-KEY TRIAL : LIC-DF82D629F140CBD53282EBCAA3F197BC02FE8214
+**KEY TRIAL : LIC-DF82D629F140CBD53282EBCAA3F197BC02FE8214**
 ## ✨ Tính năng nổi bật
 
 ### 📝 SQL Editor thông minh
