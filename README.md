@@ -10,7 +10,7 @@
 
 ## Download
 
-[**M-DataPlus Setup 1.0.0.exe** (Windows)](https://github.com/anhnvt4620/M-DataPlus/releases/download/v1.0.0/M-DataPlus.Setup.1.0.0.exe)
+[**M-DataPlus Setup 1.1.0.exe** (Windows)](https://github.com/anhnvt4620/M-DataPlus/releases/download/v1.1.0/M-DataPlus.Setup.1.1.0.exe)
 
 Yêu cầu: Windows 10/11, .NET không cần cài thêm.
 
