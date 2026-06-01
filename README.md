@@ -1,7 +1,7 @@
 # M-DataPlus
 
 <p align="center">
-  <img src="https://github.com/anhnvt4620/M-DataPlus/raw/master/build/icon.png" width="128" alt="M-DataPlus Logo" />
+  <img src="https://github.com/anhnvt4620/M-DataPlus/blob/master/favicon.svg" width="128" alt="M-DataPlus Logo" />
 </p>
 
 <p align="center">
