@@ -20,7 +20,7 @@
 
 | Phiên bản | Liên kết tải xuống | Yêu cầu hệ thống |
 | :--- | :--- | :--- |
-| **v1.1.0 (Latest)** | [**M-DataPlus Setup 1.1.0.exe**](https://github.com/anhnvt4620/M-DataPlus/releases/download/v1.1.1/M-DataPlus.Setup.1.1.1.exe) | Windows 10/11 (Không cần cài thêm .NET) |
+| **v1.1.1 (Latest)** | [**M-DataPlus Setup 1.1.0.exe**](https://github.com/anhnvt4620/M-DataPlus/releases/download/v1.1.1/M-DataPlus.Setup.1.1.1.exe) | Windows 10/11 (Không cần cài thêm .NET) |
 
 ---
 **KEY TRIAL : LIC-DF82D629F140CBD53282EBCAA3F197BC02FE8214**
